@@ -8,15 +8,31 @@
 </head>
 <body>
     <div>    
-         <button onclick="csdn()">去我的csdn</button>    
-         <button onclick="blob()">去我的blob</button>    
     </hr>
-    </div>
-    <div>
-        
-        <img width='75%' src="https://cn.bing.com/th?id=OHR.JabiruStork_ZH-CN0218761234_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp"></img>
-        
-        
+</div>
+<div>
+    
+    <img width='75%' src="https://cn.bing.com/th?id=OHR.JabiruStork_ZH-CN0218761234_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp"></img>
+    
+    
+</div>
+
+    <div class="side_top">
+        <div class="head_top">
+            <img src="https://dbin-blob.github.io/img/avatar.jpg"></img>
+                <!-- <div > -->
+            <!-- </div> -->
+        </div>
+    
+        <div class="head_menu">
+
+            <div>
+                <button onclick="csdn()">去我的csdn</button>    
+            </div>
+            <div>
+                <button onclick="blob()">去我的blob</button>    
+            </div>
+        </div>
     </div>
 </body>
 </html>
@@ -32,3 +48,52 @@
             window.open("https://dbin-blob.github.io/")
         }
 </script>
+
+<style  type="text/css">
+    .side_top{
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: #7c8e98;
+        height: 100%;
+        width: 300px;
+    }
+
+    .head_top{
+            /* background-color: antiquewhite; */
+            /* width: 10px; */
+            /* margin: 0 auto; */
+            height: 110px;
+            padding-top:30px;
+            padding-bottom:30px;
+
+            text-align: center;
+    }
+
+    .head_top > img{
+        border: 2px solid white;
+        border-radius: 50%;
+        width: 100px;
+        height:100px;
+    }
+
+    .head_menu {
+        text-align:center;
+        width:100%
+    }
+
+    .head_menu *{
+        margin: 3px;
+    }
+
+    .head_menu button{
+        border-radius: 5px;
+        border: 0px solid #72aecf;
+        min-width: 90px;
+        max-width: 200px;
+        cursor: pointer;
+        background-color: floralwhite;
+        height: 25px;
+    }
+
+</style>
